@@ -1,0 +1,6 @@
+# yarn
+yarn create vite svelte-app --template svelte-ts
+cd svelte-app
+yarn
+yarn dev
+

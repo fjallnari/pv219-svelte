@@ -1,0 +1,85 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --clr-bg: #1B1B1E;
+  --clr-box-bg-dark: #212125;
+  --clr-box-bg-normal: #252529;
+  --clr-box-bg-light: #303036;
+  --clr-box-bg-lighter: #56565D;
+  --clr-text: #F9F9F9;
+  --clr-accent: #B8605D;
+
+  color-scheme: light dark;
+  color: var(--clr-text);
+  background-color: var(--clr-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+box {
+  background-color: var(--clr-box-bg-normal);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+sendable {
+  cursor: pointer;
+  transition: color 100ms ease-in;
+  display: inline-grid;
+  align-self: center;
+}
+
+sendable:active {
+  color: var(--clr-accent-normal);
+}
+
+svg.big-icon {
+  font-size: 1.5em;
+}
+
+.box-with-label {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.box-main-text {
+  margin-top: auto;
+  margin-bottom: -0.6vw;
+}
+
+.box-justify-filler {
+  margin-top: auto; 
+  height: 0;
+}
+
+.box-label {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: Athiti;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
