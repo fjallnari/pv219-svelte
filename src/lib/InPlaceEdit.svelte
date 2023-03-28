@@ -2,7 +2,12 @@
     import { createEventDispatcher, onMount } from 'svelte'
     import { getDefaultIfEmpty, isTextNonEmpty } from '../util/util';
 
-    export let value: any = '', required = true, editWidth: string = 'inherit', editHeight: string = 'inherit', defaultValue: string = '---', valueFontSize = '1em';
+    export let value: any = '';
+    export let required = true;
+    export let editWidth: string = 'inherit';
+    export let editHeight: string = 'inherit';
+    export let defaultValue: string = '---';
+    export let valueFontSize = '1em';
 
     const dispatch = createEventDispatcher();
     let editing = false, original: string;
